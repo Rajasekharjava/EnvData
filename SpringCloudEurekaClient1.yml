@@ -8,13 +8,10 @@ server:
 eureka:
    instance:
     hostname: localhost
-    statusPageUrl: https://${eureka.hostname}/info
-    healthCheckUrl: https://${eureka.hostname}/health
-    homePageUrl: https://${eureka.hostname}/
     
    client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka:eureka@${eureka.instance.hostname}:8761/eureka/
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
       
