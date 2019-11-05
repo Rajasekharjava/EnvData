@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: SpringCloudEurekaClient1
+
+server:
+  port: 2000
+
+eureka:
+   instance:
+    hostname: localhost
+    statusPageUrl: https://${eureka.hostname}/info
+    healthCheckUrl: https://${eureka.hostname}/health
+    homePageUrl: https://${eureka.hostname}/
+    
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
