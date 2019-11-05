@@ -17,3 +17,4 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka:eureka@${eureka.instance.hostname}:8761/eureka/
+      
