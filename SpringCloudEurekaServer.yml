@@ -1,10 +1,10 @@
 spring:
   application:
     name: SpringCloudEurekaServer    
-  #security:
-    #user:
-      #name: eureka
-      #password: eureka
+  security:
+    user:
+      name: eureka
+      password: eureka
 server:
   port: 8761
  
